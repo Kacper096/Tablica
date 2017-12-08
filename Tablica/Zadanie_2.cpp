@@ -3,6 +3,14 @@
 
 using namespace std;
 
+void zm_min_na_plus(int tab[], int tab2[])
+{
+	for (int i = 0; i < 11; i++)
+	{
+		tab2[i] = abs(tab[i]);
+		//cout << tab2[i] << endl;
+	}
+}
 void UNIKALNE(const int tab[], int tab2[], int rozmiar)
 {
 	for (int j = 0; j < rozmiar; )
@@ -85,8 +93,9 @@ void SORTOWANIE(int tab[], int rozmiar)
 void Zadanie_2()
 {
 	int tablica[11] = { 10,-3,5,8,-2,7,13,10,3,-8,2 };
+	int TABLICA[11];
 	
-
+	////A----
 	int rozmiar = Sprawdzenie_ILE_PLUS(tablica);			//// <<<<<-------PRZEZ TA FUNKCJE WIEMY JAKI MA MIEC ROZMIAR DRUGA TABLICA
 	int *tablica2 = new int[rozmiar];					//// <<<------TWORZYMY TABLICE O DANYM ROZMIARZE
 
@@ -97,14 +106,27 @@ void Zadanie_2()
 	////SORTUJEMY TABLICE ABY POZNIEJ WYZNACZYC ELEMENTY UNIKALNE
 	SORTOWANIE(tablica, 11);
 
+	////B----
+	////TABLICA UNIKALNE
 	int rozmiar2 = ILE_UNIKALNE(tablica, 11);
 	int *tablica3 = new int[rozmiar2];
 
 	UNIKALNE(tablica, tablica3, rozmiar2);
 	
 	delete[]tablica3;
-	
-	
+	/////----------------------
 
+	////C-------
+	zm_min_na_plus(tablica, TABLICA);
+	SORTOWANIE(TABLICA, 11);
+	
+	int rozmiar3 = ILE_UNIKALNE(TABLICA, 11);
+	int *tablica4 = new int[rozmiar3];
+
+	UNIKALNE(TABLICA, tablica4, rozmiar3);
+
+	delete[]tablica4;
+	
+	
 	system("pause");
 }
