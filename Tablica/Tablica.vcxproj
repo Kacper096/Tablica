@@ -161,6 +161,7 @@
     <ClCompile Include="Tablica.cpp" />
     <ClCompile Include="Zadanie_1.cpp" />
     <ClCompile Include="Zadanie_2.cpp" />
+    <ClCompile Include="Zadanie_3.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

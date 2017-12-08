@@ -91,12 +91,29 @@ void Zadanie_1()
 	c(tablica3);
 	d(tablica4);
 
+	cout << " Tablica A: ";
 	for (int i = 0; i < 10; i++)
 	{
-		//cout << "Tablica a "<< tablica[i] << endl;
-		//cout << "Tablica b " << tablica2[i] << endl;
-		//cout << "Tablica c " << tablica3[i] << endl;
-		//cout << "Tablica d " << tablica4[i] << endl;
+		cout << "Tab ["<< i << "] "<< tablica[i] << endl;
+		
+	}
+
+	cout << endl << " Tablica B: " << endl;
+	for (int i = 0; i < 10; i++)
+	{
+		cout << "Tab [" << i << "] " << tablica2[i] << endl;
+	}
+
+	cout << endl << " Tablica C: " << endl;
+	for (int i = 0; i < 10; i++)
+	{
+		cout << "Tab [" << i << "] " << tablica3[i] << endl;
+	}
+
+	cout << endl << " Tablica D: " << endl;
+	for (int i = 0; i < 10; i++)
+	{
+		cout << "Tab [" << i << "] " << tablica4[i] << endl;
 	}
 	cout << endl;
 	system("pause");
